@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_red"
+            android:src="@drawable/class_f" />
+
+        <com.lagersoft.widges.SearchClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:focusable="true"
+            android:hint="  购物、超市、生鲜或直销"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="#a9a9a9"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/input_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_red"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_search" />
+    </LinearLayout> 
+
+</LinearLayout>

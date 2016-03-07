@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_bar_style" >
+
+    <TextView
+        android:id="@+id/back_btn"
+        style="@style/back_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title_bar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/right_text"
+        style="@style/title_bar_button"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/right_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15.0dip"
+        android:indeterminateOnly="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/left_location"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_red_button"
+        android:drawableLeft="@drawable/location"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="黄冈"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_search"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_search_bg"
+        android:drawableLeft="@drawable/ic_search"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="0dp"
+        android:text="  购物、超市、生鲜或直销"
+        android:textColor="@color/light_red"
+        android:visibility="gone" />
+
+</RelativeLayout>

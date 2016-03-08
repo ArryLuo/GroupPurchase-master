@@ -3,6 +3,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 轮播图片 -->
+
+        <include
+            android:id="@+id/include_lunbo"
+            layout="@layout/home_lunbo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:numColumns="2"
+            android:verticalSpacing="1pt" >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/t_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机通讯" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/catergory_mobile" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 特价区 -->
+
+        <include
+            android:id="@+id/include_tejia"
+            layout="@layout/home_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/t_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="ss" />
+
+        <GridView
+            android:id="@+id/grid_content_name"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:numColumns="2"
+            android:verticalSpacing="1pt" >
+        </GridView>
+
+        <include
+            android:id="@+id/include_paiban"
+            layout="@layout/home_grid_content_name" />
+    </LinearLayout>
 
 </LinearLayout>
